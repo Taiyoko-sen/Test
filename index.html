@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Test Duyuru Sayfası</title>
+  <title>Test Sayfası</title>
 </head>
 <body>
-    <main>
-        <div class="duyuru">
-            <h1>📢 Duyuru</h1>
-            <p>Bu sayfa, Site Takipçisi uygulaması tarafından test amacıyla izlenmektedir.</p>
-            <p>Test içeriği:</p>
-            <p id="icerik">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit nec bibendum blandit. 
-                Integer non sapien vel nisl tincidunt gravida. Duis nec vestibulum eros, sed porttitor nisl. 
-                Pellentesque eu augue nec elit ultricies consequat. Proin at justo et dolor feugiat tincidunt. 
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
-                Suspendisse potenti. Sed dapibus, risus non tempus posuere, orci nulla blandit justo, a ullamcorper nunc libero nec risus.
-                Değişiklik tarihi: 2025-06-09 15:00
-            </p>
-            <p>Yeni bir duyuru eklendi!!</p>
-        </div>
-    </main>
+  <h1 id="dynamic">Yükleniyor...</h1>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("dynamic").innerText = "🟢 Bu içerik JavaScript ile eklendi!";
+    }, 1000);
+  </script>
 </body>
 </html>
