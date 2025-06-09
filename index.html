@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <title>Test Sayfası</title>
+  <meta charset="UTF-8">
+  <title>Statik Duyuru Sayfası</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 30px;
+      background: #f5f5f5;
+    }
+    .duyuru {
+      background: white;
+      padding: 16px;
+      margin-bottom: 12px;
+      border-left: 6px solid #4caf50;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-  <h1 id="dynamic">Yükleniyor...</h1>
+  <h1>📢 Duyurular</h1>
 
-  <script>
-    setTimeout(() => {
-      document.getElementById("dynamic").innerText = "🟢 Bu içerik JavaScript ile eklendi!";
-    }, 1000);
-  </script>
+  <div class="duyuru">
+    Yeni ders programı yayımlandı: 10 Haziran 2025
+  </div>
+
+  <div class="duyuru">
+    Yaz okulu kayıtları başlamıştır.
+  </div>
+
+  <div class="duyuru">
+    Final haftası için sınav saatleri açıklandı.
+  </div>
 </body>
 </html>
